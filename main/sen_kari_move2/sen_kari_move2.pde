@@ -1,8 +1,8 @@
 int ranges = 20;
 
 void setup() {
-  //fullScreen();
   size(600, 400);
+  background(255);
 }
 
 void draw() {
@@ -15,9 +15,9 @@ void draw() {
     stroke(paint);
     
     beginShape();
-    for (int x = -5; x < width + 5; x += 10) {
-      float n = noise(x * 0.0007, i * 0.005, frameCount * 0.001);
-      float y = map(n, 0, 1, 0, height);
+    for (int y = -5; y < height + 5; y += 10) {
+      float n = noise(i * 0.0007, y * 0.005, frameCount * 0.001);
+      float x = map(n, 0, 1, 0, width);
       vertex(x, y);
     }
     endShape();
