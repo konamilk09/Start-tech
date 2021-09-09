@@ -1,10 +1,12 @@
 PImage img;
  
 void setup() {
-  size(750, 500);
-  img = loadImage("yukata_foreigner.jpg");
+  size(400, 400);
+  img = loadImage("kingyo_red2.png");
+  background(255);
+  image(img, 0, 0);
 }
  
 void draw() {
-  image(img, 0, 0);
+
 }

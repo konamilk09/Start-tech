@@ -1,7 +1,7 @@
 int cols;
 int rows;
-float[][] current;// = new float[cols][rows];
-float[][] previous;// = new float[cols][rows];
+float[][] current;
+float[][] previous;
 
 float dampening = 0.98;
 
@@ -17,12 +17,12 @@ void setup() {
 }
 
 void mouseDragged() {
-  previous[mouseX][mouseY] = 10000;
+  previous[mouseX][mouseY] = 7000;
 }
 
 
 void mousePressed() {
-  previous[mouseX][mouseY] = 10000;
+  previous[mouseX][mouseY] = 7000;
 }
 
 void draw() 
